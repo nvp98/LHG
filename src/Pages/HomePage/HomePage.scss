@@ -1,0 +1,49 @@
+.homePage_wrap {
+  min-height: 80vh;
+  background-size: 100% 80vh;
+  .ant-menu {
+    border-right: 0px;
+  }
+  .content {
+    max-width: 800px;
+    @media screen and(max-width:1200px) {
+      max-width: 50%;
+    }
+  }
+  .star {
+    width: 100%;
+    @media screen and (max-width: 1024px) {
+      width: 70%;
+    }
+  }
+  @media screen and (max-height: 500px) {
+    min-height: 700px;
+    background-size: 100% 700px;
+  }
+  .homePage_container {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    height: 100vh;
+  }
+  .homePage_content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  .homePage_present {
+    -webkit-box-shadow: 5px 5px 15px 5px #ffffff;
+    box-shadow: 5px 5px 15px 5px #e6e6e6;
+    background-color: #FFFFFF;
+    width: 50vw;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .logout {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+}

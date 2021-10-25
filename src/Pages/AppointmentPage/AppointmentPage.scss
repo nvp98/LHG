@@ -1,0 +1,21 @@
+.Appointment {
+  .Appointment_Title {
+    display: flex;
+    .btn-app {
+      position: absolute;
+      right: 32px;
+    }
+  }
+  .ant-pagination-options-size-changer.ant-select {
+    display: none;
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}
+h3 {
+  font-weight: bold;
+}

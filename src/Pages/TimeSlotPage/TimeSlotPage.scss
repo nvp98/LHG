@@ -1,0 +1,26 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.timeslot_wrap {
+  .timeslot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .timeslot-title {
+      color: $c-textSecondary !important;
+      font-weight: bold;
+    }
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+  .ant-table-wrapper {
+    max-width: 75%;
+  }
+  .ant-pagination-item-link {
+    background-color: initial;
+  }
+}

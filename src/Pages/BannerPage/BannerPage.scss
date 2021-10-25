@@ -1,0 +1,68 @@
+@import '../../Scss/_config';
+
+.banner-wrap {
+  .banner-item {
+    text-align: center;
+    // box-shadow: 34px 34px 89px #329d9c21;
+    border-radius: 8px;
+    width: 90%;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      margin: 0 auto;
+      font-weight: bold;
+      font-size: 1.2rem;
+      img {
+        float: right;
+        // width: 1.2rem;
+        max-width: 25px;
+        // margin-top: 10px;
+        cursor: pointer;
+      }
+      button {
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        // width: 1rem;
+        font-weight: 800;
+        border: 0;
+        float: right;
+        &:focus {
+          border: 0;
+        }
+      }
+    }
+    .banner-img {
+      img {
+        height: 300px;
+        width: 484px;
+        border-radius: 8px;
+        width: 100%;
+        cursor: move;
+        margin-top: 10px;
+      }
+    }
+    img {
+      max-width: 100%;
+      // height: 300px;
+    }
+    .banner-add {
+      margin: auto;
+    }
+  }
+  .banner-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 34px 34px 89px #329d9c21;
+    border-radius: 21px;
+    opacity: 1;
+    height: 222px;
+    width: 80%;
+    margin: auto;
+  }
+}

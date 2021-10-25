@@ -1,0 +1,33 @@
+@import '../../Scss/_config';
+@import '../../Scss/mixins';
+
+.checkBox {
+  width: 100%;
+  .ant-col {
+    margin-bottom: 2rem;
+  }
+  .ant-checkbox-input {
+    color: #2cb9aa;
+  }
+  .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2cb9aa;
+    border-radius: 6px;
+  }
+  .check_total {
+    span {
+      color: #205072;
+      font-weight: bold;
+    }
+  }
+  .check_item {
+    .ant-checkbox + span {
+      color: #2cb9aa;
+      font-weight: bold;
+    }
+  }
+  .ant-checkbox + span {
+    padding-left: 16px;
+  }
+}

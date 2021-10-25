@@ -1,0 +1,95 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+@import 'react-big-calendar/lib/sass/styles';
+
+.big-calendar {
+  .rbc-calendar {
+    // width: 100%;
+    margin: 2rem 0;
+    overflow: visible;
+  }
+  .rbc-btn-group {
+    display: none !important;
+  }
+  .rbc-event-label {
+    display: none;
+  }
+  .rbc-header {
+    border: 0;
+    overflow: visible;
+  }
+
+  .rbc-time-view {
+    border: $b-borderTable !important;
+    border-bottom: 0;
+  }
+
+  .rbc-timeslot-group {
+    border-bottom: $b-borderTable !important;
+  }
+
+  .rbc-header .rbc-today {
+    border-right: $b-borderTable !important;
+  }
+
+  .rbc-time-content {
+    border-top: $b-borderTable !important;
+  }
+
+  .rbc-time-content > * + * > *,
+  .rbc-header + .rbc-header,
+  .rbc-day-bg + .rbc-day-bg,
+  .rbc-time-header-content {
+    border-left: $b-borderTable !important;
+  }
+
+  .rbc-day-slot .rbc-events-container {
+    margin: 0;
+  }
+
+  .rbc-allday-cell {
+    display: none;
+  }
+  .rbc-time-view .rbc-header {
+    border-bottom: none;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+// .rbc-time-header {
+//   margin-right: 0 !important;
+// }
+/* width */
+.rbc-time-content::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+.rbc-time-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.rbc-time-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.rbc-time-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dayCalendar {
+  .rbc-header {
+    border: 0;
+    overflow: visible;
+    height: 60px !important;
+    // line-height: 60px;
+  }
+}
+
+.rbc-today {
+  background-color: #fff !important;
+}

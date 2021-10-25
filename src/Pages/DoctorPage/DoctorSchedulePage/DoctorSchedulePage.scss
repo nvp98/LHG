@@ -1,0 +1,162 @@
+@import 'Scss/_config';
+@import 'react-big-calendar/lib/sass/styles';
+
+.doctor_calendar {
+  padding-bottom: 100px;
+  .doctor {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-bottom: 3rem;
+    .doctor_title {
+      font-weight: bold;
+    }
+    .doctor_info {
+      flex: 6;
+      margin-top: 0.75rem;
+      display: flex;
+      justify-content: space-around;
+      div {
+        display: inline;
+        span {
+          font-weight: bold;
+          margin-left: 0.5rem;
+        }
+        p {
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .doctor_button {
+      flex: 1;
+    }
+  }
+  .calendar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .day_picker {
+      flex: 1;
+      .DayPicker {
+        box-shadow: 0 0 89px 0px #329d9c21 !important;
+      }
+      .DayPicker:focus,
+      .DayPicker-wrapper:focus,
+      .DayPicker-Day:focus {
+        outline: none !important;
+      }
+      .DayPicker-wrapper {
+        background-color: #ffffff;
+        border-radius: 21px;
+        box-shadow: 34px 34px 89px #329d9c21;
+      }
+      .DayPicker-Caption > div {
+        font-size: 15px !important;
+        font-weight: bold;
+      }
+      .DayPicker-Weekdays {
+        abbr {
+          color: #cde0c9 !important;
+        }
+      }
+      .DayPicker-Day {
+        padding: 2px;
+        font-size: 12px;
+        height: 32px;
+        width: 32px;
+      }
+      .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+        background: linear-gradient(
+          to right bottom,
+          #7be495,
+          #329d9c
+        ) !important;
+        color: #f0f8ff !important;
+      }
+      .DayPicker:not(.DayPicker--interactionDisabled)
+        .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+        background-color: #cff4d2;
+      }
+      .DayPicker-Caption {
+        border-bottom: 1px dashed $c-primary;
+        padding-bottom: 20px;
+      }
+    }
+    .big-calendar {
+      flex: 5;
+      padding-right: 20px 20px 100px 20px;
+      .rbc-calendar {
+        width: 100%;
+        margin: 0 10px;
+        overflow: hidden;
+      }
+      .rbc-btn-group {
+        display: none !important;
+      }
+      .rbc-header {
+        border: 0;
+      }
+
+      .rbc-time-view {
+        border: $b-borderTable !important;
+        border-bottom: 0;
+      }
+
+      .rbc-timeslot-group {
+        border-bottom: $b-borderTable !important;
+      }
+
+      .rbc-header .rbc-today {
+        border-right: $b-borderTable !important;
+      }
+
+      .rbc-time-content {
+        border-top: $b-borderTable !important;
+      }
+
+      .rbc-time-content > * + * > *,
+      .rbc-header + .rbc-header,
+      .rbc-day-bg + .rbc-day-bg,
+      .rbc-time-header-content {
+        border-left: $b-borderTable !important;
+      }
+
+      .rbc-day-slot .rbc-events-container {
+        margin: 0;
+      }
+      .rbc-day-slot .rbc-event {
+        border: none;
+        border-radius: initial;
+      }
+
+      .rbc-allday-cell {
+        display: none;
+      }
+      .rbc-time-view .rbc-header {
+        border-bottom: none;
+        height: 30px;
+        line-height: 30px;
+      }
+      .rbc-toolbar-label {
+        display: none;
+      }
+    }
+  }
+}
+
+.rbc-event-label {
+  display: none;
+}
+// .rbc-day-slot .rbc-event-content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+.rbc-time-content::-webkit-scrollbar {
+  display: none;
+}
+
+.rbc-time-header {
+  margin-right: 0 !important;
+}

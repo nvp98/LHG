@@ -1,0 +1,98 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.search-wapper {
+  flex: 1 0;
+  margin: 15px 0;
+  .group-filter {
+    margin-top: 15px;
+  }
+  // .input-group-custom {
+  //   .ant-input-number-focused {
+  //     .ant-input-number-input {
+  //       z-index: 20;
+  //       position: relative;
+  //     }
+  //   }
+  // }
+}
+.search-content {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 32px;
+  overflow: hidden;
+  .wrapper-search-default {
+    flex: 1;
+  }
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .search-content-item {
+    line-height: 32px;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.025);
+    }
+
+    &:before {
+      content: '';
+      width: 1px;
+      height: 22px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -11px;
+      background: #d9d9d9;
+    }
+  }
+}
+
+.search-dropdown-chbox-content {
+  position: relative;
+  margin: 0;
+  padding: 4px 0;
+  text-align: left;
+  list-style-type: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  outline: none;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate3d(0, 0, 0);
+
+  .item-checkbox {
+    label {
+      margin-right: 0;
+      padding: 4px 10px;
+    }
+  }
+}
+.form-item {
+  margin: 0.3rem 5px;
+
+  label {
+    color: $c-textSecondary;
+    font-weight: bold;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

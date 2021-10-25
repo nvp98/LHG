@@ -1,0 +1,13 @@
+.logout-container {
+  flex-direction: row;
+  cursor: pointer;
+  width: 150px;
+  .img-logout {
+    height: 25px;
+    width: 25px;
+  }
+  .text-logout {
+    text-decoration: underline;
+    padding-right: 20px;
+  }
+}

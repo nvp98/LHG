@@ -1,0 +1,25 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.default .ant-modal-title {
+  color: $c-secondary;
+}
+
+.warning .ant-modal-title {
+  color: $c-yellow;
+}
+.error .ant-modal-title {
+  color: $c-red;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.ant-modal-body {
+  padding-bottom: 0;
+}
+
+.ant-modal-content .ant-modal-footer {
+  padding: 0.75rem 1rem 1rem 1rem !important;
+}

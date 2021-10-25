@@ -1,0 +1,14 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.Patient {
+  .Patient_Title {
+    font-weight: bold;
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}

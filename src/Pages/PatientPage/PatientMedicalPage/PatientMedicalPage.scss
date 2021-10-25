@@ -1,0 +1,136 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.record-wrapper {
+  // width: 1200px;
+  height: 550px;
+  padding: 50px;
+  margin: 10px auto;
+  box-shadow: 34px 34px 89px #329d9c21;
+  border-radius: 20px;
+
+  .ant-input-affix-wrapper {
+    border-radius: 20px 0 0 20px;
+  }
+
+  .ant-input-group-wrapper {
+    margin: 10px;
+  }
+  .resume {
+    display: flex;
+    align-items: center;
+
+    .left-resume {
+      width: 45%;
+      border: 2px solid #56c596;
+      border-radius: 25px;
+      padding: 20px;
+      p {
+        font-weight: bold;
+        width: 200px;
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+    .right-resume {
+      width: 45%;
+      border: 2px solid #56c596;
+      border-radius: 25px;
+      padding: 20px;
+      p {
+        font-weight: bold;
+        width: 200px;
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  }
+
+  .search {
+    .ant-btn {
+      width: 50px;
+      height: 2rem;
+      margin-left: 0;
+    }
+  }
+  .ant-input-search
+    > .ant-input-group
+    > .ant-input-group-addon
+    .ant-input-search-button {
+    border-radius: 0 20px 20px 0;
+    height: 60px;
+  }
+  .ant-input-search {
+    height: 60px;
+    border-radius: 20px 0px 0px 20px;
+    height: 60px;
+  }
+  .ant-input {
+    border-radius: 20px 0px 0px 20px;
+    border: 2px solid #56c596;
+    height: 60px;
+  }
+  .ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-radius: 20px 0px 0px 20px;
+    height: 60px;
+  }
+  .ant-input-disabled {
+    height: 60px !important;
+  }
+  h3 {
+    color: #68b2a0;
+    font-size: 20px;
+  }
+  h2 {
+    color: #205072;
+  }
+  .inputotp {
+    font-size: 1.75rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    padding: 0;
+    margin: 0 0.625rem;
+    outline: none;
+    background-color: transparent;
+    width: 2.25rem;
+    text-align: center;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+
+  .form-otp {
+    width: 500px;
+    height: 400px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 34px 34px 89px #329d9c21;
+    border-radius: 24px;
+  }
+  .otp {
+    display: flex;
+    justify-content: center;
+  }
+  .otp-btn {
+    .ant-btn {
+      width: 100px;
+      height: 40px;
+      margin: 0 5px;
+      background: none;
+      color: #205072;
+      border: 1px;
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+      vertical-align: middle;
+      font-weight: bold;
+      line-height: 18px;
+      font-size: 13px;
+    }
+  }
+}

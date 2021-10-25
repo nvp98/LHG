@@ -1,0 +1,110 @@
+@import 'Scss/_config';
+
+#login-content {
+  display: inline-block;
+  width: 100vw;
+  min-height: 80vh;
+  align-items: center;
+  background-size: 100% 100%;
+  // min-height: 400px;
+  // background-color: #f0f2f5;
+  @media screen and (max-height: 300px) {
+    min-height: 700px;
+    background-size: 100% 700px;
+  }
+  .login-wrap {
+    width: 30vw;
+    margin: auto;
+    margin-top: 20px;
+    // background: #ffffff;
+    padding: 15px;
+    // border-radius: 10px;
+    // box-shadow: 1px 1px 10px #ccc;
+
+    .logo {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      img {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-left: 33.33%;
+      }
+    }
+
+    h1 {
+      font-size: 18px;
+      color: $c-primary;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+  }
+  .login-form {
+    .ant-col {
+      max-width: 100%;
+    }
+    .login-form-button {
+      width: 45%;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .ant-input:placeholder-shown {
+      //background-color: $c-textPrimary;
+    }
+    .ant-input-affix-wrapper > input.ant-input:focus {
+      //background-color: #ffffff;
+      //color: $c-text-light;
+    }
+    .ant-form-item-control-input-content {
+      height: 42px;
+    }
+    .ant-input-affix-wrapper {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 10px 10px 10px 3px;
+      border: solid #FFFFFF 0;
+      box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+    }
+    .ant-input:active {
+      //color: $c-textPrimary;
+    }
+    .ant-input-affix-wrapper > input.ant-input {
+      //background-color: #ffffff;
+      //color: $c-text-light;
+      border-radius: 0px;
+    }
+    .ant-input-prefix {
+      color: $c-textPrimary;
+      border-right: solid #61c8ce 0.8px;
+      padding-right: 5px;
+      padding: 9px;
+    }
+    .site-form-item-icon {
+      font-size: 19px;
+    }
+    input::placeholder {
+      color: $c-textPrimary !important;
+      opacity: 0.4 !important;
+    }
+    // thay doi backgorund va color cho autofill browser
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $c-text-light inset !important;
+      -webkit-text-fill-color: $c-textPrimary !important;
+    }
+    border: solid #FFFFFF 0;
+    box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+  }
+}

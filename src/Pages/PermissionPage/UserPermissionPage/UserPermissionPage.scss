@@ -1,0 +1,18 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.Userpermission-warp {
+  .Userpermission_title {
+    display: flex;
+    .btn-app {
+      margin: auto;
+      margin-right: 20px;
+    }
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}

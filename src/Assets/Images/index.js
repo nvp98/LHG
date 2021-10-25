@@ -1,0 +1,11 @@
+export const star0 = require('./star0.svg');
+export const star1 = require('./star1.svg');
+export const star2 = require('./star2.svg');
+export const star3 = require('./star3.svg');
+export const star4 = require('./star4.svg');
+export const star5 = require('./star5.svg');
+export const star6 = require('./star6.svg');
+export const star7 = require('./star7.svg');
+export const star8 = require('./star8.svg');
+export const star9 = require('./star9.svg');
+export const star10 = require('./star10.svg');

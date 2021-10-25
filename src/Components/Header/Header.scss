@@ -1,0 +1,96 @@
+@import 'Scss/_config';
+
+.header {
+  background: 'transparent';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 12vh;
+  .logo {
+    display: flex;
+    height: 90%;
+    width: 30%;
+    img {
+      display: block;
+      margin: 0.5rem 0 0.5rem 2rem;
+      width: 87px;
+      height: 86px;
+      // margin: auto;
+      // text-align: center;
+      @media screen and(max-width: 1200px) {
+        width: 20%;
+      }
+    }
+    .title_wrap {
+      width: 80%;
+      height: 64px;
+      align-items: center;
+      margin: auto;
+      .title {
+        color: $c-primary !important;
+        // margin-top: 12px !important;
+        opacity: 1;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+        font-weight: 800;
+      }
+      .title_down {
+        display: inline;
+        color: $c-primary !important;
+        font-size: 1rem;
+      }
+      img {
+        // margin-left: 0px;
+        width: 248px;
+        height: 52px;
+        @media screen and(max-width: 1200px) {
+          width: 100%;
+        }
+      }
+      .slogan-lhg {
+        width: 200px;
+      }
+      .logo-lhg {
+        margin: 0.3rem 0 0.3rem 1rem;
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+  .title_center {
+    width: 100%;
+    color: $c-secondary;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    margin-left: 0px;
+    // margin-left: 10em;
+    font-family: $f-family;
+    p {
+      width: 542px;
+      height: 42px;
+      margin: auto;
+      // margin-left: 130px;
+      margin-bottom: 0px;
+      letter-spacing: 0.48px;
+    }
+  }
+  .header-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: $c-white;
+    .avatar-icon {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  color: $c-secondary !important;
+}

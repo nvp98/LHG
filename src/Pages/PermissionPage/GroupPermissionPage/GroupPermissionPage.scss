@@ -1,0 +1,21 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.Grouppermission-wrap {
+  .Grouppermission_title {
+    display: flex;
+    .btn-app {
+      margin: auto;
+      margin-right: 20px;
+    }
+  }
+  .ant-col-md-8 .ant-col-lg-6 .ant-col-xl-6 {
+    max-width: 50% !important;
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}

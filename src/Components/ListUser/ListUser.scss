@@ -1,0 +1,25 @@
+.user-wrap {
+  width: 40%;
+  .list-user {
+    // width: 50%;
+    max-height: 300px;
+    overflow: auto;
+    .item-user {
+      color: #2cb9aa;
+      font-weight: bold;
+      position: relative;
+      padding: 5px;
+      span {
+        position: absolute;
+        right: 0;
+        img {
+          max-width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .ant-pagination {
+    text-align: center;
+  }
+}

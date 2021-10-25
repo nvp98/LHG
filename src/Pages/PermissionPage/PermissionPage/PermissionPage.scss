@@ -1,0 +1,21 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.row {
+  margin-top: 3rem;
+  .ant-form-item {
+    flex-direction: column;
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+  .ant-form-item-label > label:after {
+    content: '';
+  }
+  .ant-select-selection-placeholder {
+    color: #61c8ce;
+  }
+  .ant-form-item {
+    margin-left: 10px;
+  }
+}

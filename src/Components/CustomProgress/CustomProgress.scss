@@ -1,0 +1,15 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.process {
+  display: flex;
+  .process-title {
+    flex: 1;
+    display: inline;
+    margin-bottom: 10px;
+  }
+  .ant-progress-line {
+    flex: 6;
+    width: 70% !important;
+  }
+}

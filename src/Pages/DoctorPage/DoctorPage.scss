@@ -1,0 +1,20 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.doctor_wrap {
+  .doctor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .doctorTitle {
+      color: $c-textSecondary !important;
+      font-weight: bold;
+    }
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}

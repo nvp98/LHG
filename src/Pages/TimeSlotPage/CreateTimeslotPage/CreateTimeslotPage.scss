@@ -1,0 +1,37 @@
+@import 'Scss/_config';
+
+.create-timeslot {
+  .create-timeslot-title {
+    font-weight: bold;
+  }
+  .ant-tag {
+    margin: 0 0 2px 5px;
+    border-radius: 10px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .tag-style {
+    border-radius: 10px;
+    margin: 28px 20px;
+  }
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+  .ant-picker-panels {
+    width: 100%;
+    .ant-picker-panel {
+      width: 100%;
+      .ant-picker-time-panel {
+        min-width: auto;
+      }
+    }
+  }
+
+  .ant-picker-time-panel-column::-webkit-scrollbar {
+    display: none;
+  }
+}
+.ant-picker-time-panel-column {
+  width: 112px !important;
+}

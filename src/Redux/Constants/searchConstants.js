@@ -1,0 +1,1 @@
+export const SET_PARAMS_TABLE = 'SET_PARAMS_TABLE';

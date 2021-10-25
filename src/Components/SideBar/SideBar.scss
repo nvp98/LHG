@@ -1,0 +1,96 @@
+@import 'Scss/_config';
+
+.site-layout-background {
+  background-color: #ffffff;
+  padding-top: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 0px;
+  -webkit-box-shadow: 5px 5px 15px 5px #ffffff;
+  box-shadow: 5px 5px 15px 5px #e6e6e6;
+  height: 100vh;
+  position: fixed;
+  z-index: 30;
+  .ant-layout-sider-children {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .ant-menu {
+    //background: $c-sideBar;
+    min-height: calc(100% - 145px);
+    padding-top: 20px;
+  }
+  span {
+    color: $c-textSecondary;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    p {
+      height: 25px;
+      margin-bottom: 0;
+    }
+  }
+  .side-icon {
+    font-size: 20px;
+    color: #205072;
+
+    img {
+      width: 100%;
+    }
+  }
+  .ant-menu-inline > .ant-menu-item {
+    height: 50px;
+    line-height: 50px;
+    img {
+      vertical-align: sub;
+    }
+  }
+  .ant-menu-vertical > .ant-menu-item {
+    height: 45px;
+  }
+  .ant-layout-sider-trigger {
+    background-color: $c-primary;
+  }
+  .ant-menu-item-selected {
+    background-color: #96e6de !important;
+  }
+  .ant-menu-item:after {
+    border-right: 3px solid #96e6de;
+  }
+  .ant-menu-inline-collapsed > .ant-menu-item {
+    padding: 0 calc(50% - 16px);
+  }
+  .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding: 0 calc(50% - 16px);
+  }
+  .ant-menu-vertical > .ant-menu-submenu {
+    height: 45px;
+  }
+  .side-icon img {
+    width: 30px;
+  }
+  .ant-menu-submenu > .ant-menu {
+    padding-top: 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.ant-layout-sider {
+  .ant-menu-submenu {
+    .ant-menu-submenu-title {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
+.ant-layout-sider-trigger {
+  position: relative;
+}
+.sidebar-footer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+.sidebar-footer-text {
+  padding: 0px 10px;
+  text-align: center;
+}

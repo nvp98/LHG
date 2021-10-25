@@ -1,0 +1,228 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.patient {
+  color: $c-primary !important;
+  padding: 0 2rem;
+  .patient_detail {
+    margin-top: 1rem;
+    display: flex;
+    .left {
+      flex: 11;
+      .patient_info {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        background-color: #ffffff;
+        border-radius: 15px;
+        p {
+          color: $c-secondary;
+          font-weight: bold;
+        }
+        span {
+          color: $c-secondary;
+        }
+      }
+      .other_info {
+        overflow: auto;
+        max-height: 500px;
+        box-shadow: 34px 34px 89px #329d9c21;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        .tab_depends {
+          cursor: pointer;
+          display: flex;
+          align-items: center !important;
+          color: $c-secondary !important;
+          div {
+            margin: auto;
+            span {
+              color: $c-secondary !important;
+              margin: 0 0.25rem;
+            }
+            p {
+              color: $c-secondary;
+              font-weight: bold;
+            }
+          }
+        }
+        .tab_appointment_schedule {
+          cursor: pointer;
+          background: #f6f9f5 0% 0% no-repeat padding-box;
+          border-radius: 20px;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          color: $c-secondary !important;
+          padding: 1rem;
+          border: 1px solid $c-primary;
+          div {
+            margin: 0.25rem;
+            span {
+              color: $c-secondary;
+              margin: 0 0.25rem;
+            }
+            p {
+              color: $c-secondary;
+              font-weight: bold;
+            }
+          }
+        }
+        .tab_remark {
+          padding: 0.5rem;
+          .tab_remark_title {
+            display: flex;
+            justify-content: space-between;
+            color: $c-secondary;
+            span {
+              font-weight: bold;
+            }
+          }
+          .tab_remark_rate {
+            margin: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            a {
+              color: $c-primary !important;
+              text-decoration: underline;
+            }
+          }
+          .tab_remark_content {
+            color: $c-secondary !important;
+            text-align: justify;
+          }
+          .tab_remark_checkbox {
+            span {
+              color: $c-secondary !important;
+            }
+          }
+        }
+        .ant-card-bordered {
+          background: rgba(255, 255, 255, 0.5);
+        }
+      }
+      .ant-tabs-nav-list {
+        width: 100%;
+        .ant-tabs-tab {
+          width: 33.3%;
+          .ant-tabs-tab-btn {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .right {
+      flex: 9;
+      padding: 0 3rem;
+      margin-left: 2rem;
+      box-shadow: 34px 34px 89px #329d9c21;
+      display: flex;
+      justify-content: center;
+      border-radius: 21px;
+      min-height: 670px;
+      background: rgba(255, 255, 255, 0.5);
+      margin-bottom: 30px;
+      .patient-right {
+        width: 300px;
+        padding-top: 2rem;
+        .avatar {
+          margin: auto;
+          width: 150px;
+          padding: 10px 0px;
+        }
+        .patient-name {
+          margin: auto;
+          width: 300px;
+          text-align: center;
+          h2 {
+            font: normal normal bold 18px/22px Montserrat;
+          }
+        }
+        .ant-image {
+          width: 300px;
+          margin: auto;
+          text-align: center;
+          .ant-image-img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-tabs {
+  box-shadow: 34px 34px 89px #329d9c21;
+
+  .ant-tabs-tab-btn {
+    min-width: 5rem !important;
+    max-width: 15rem !important;
+    width: 10rem !important;
+    text-align: center;
+  }
+}
+
+.ant-tabs-content {
+  padding: 1rem;
+  width: 100%;
+}
+.ant-modal-content {
+  width: 500px;
+}
+.ant-tabs-tabpane .ant-tabs-tabpane-active {
+  color: $c-primary !important;
+}
+
+.ant-card {
+  border: 1px solid #2cb9aa;
+  border-radius: 21px;
+  margin: 0.5rem !important;
+}
+
+.ant-card-body {
+  padding: 1rem;
+}
+
+.ant-collapse-item {
+  border: 1px solid #68b2a0;
+  border-radius: 21px;
+  margin: 5px;
+}
+
+.ant-collapse-header {
+  color: $c-primary !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ant-collapse-borderless > .ant-collapse-item:last-child,
+.ant-collapse-borderless > .ant-collapse-item:last-child .ant-collapse-header {
+  border-radius: 21px;
+}
+
+.ant-collapse-borderless > .ant-collapse-item,
+.ant-collapse > .ant-collapse-item {
+  border-bottom: 1px solid #2cb9aa;
+}
+
+.patient .patient_detail .left .patient_info2 .collapse span {
+  color: #38bcb2 !important;
+}
+
+// .ant-collapse-content-box {
+//   overflow: auto;
+//   max-height: 400px;
+//   height: 300px;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+
+.ant-tabs-content-holder {
+  overflow: auto;
+  max-height: 500px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

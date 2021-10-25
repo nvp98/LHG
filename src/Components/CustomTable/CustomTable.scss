@@ -1,0 +1,57 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.tableWrap {
+  margin-top: 30px;
+  .ant-table {
+    .ant-table-tbody {
+      font-size: 14px;
+      padding: 8px !important;
+    }
+    .ant-table-cell {
+      padding: 8px;
+    }
+    color: $c-textSecondary !important;
+    .ant-table-thead th {
+      color: $c-white !important;
+      background: $c-primary !important;
+      font-weight: bold;
+      text-align: center;
+      border-right: $b-borderTable !important;
+    }
+    .ant-table-thead > tr > th:first-child {
+      border-left: $b-borderTable !important;
+    }
+    .ant-table-thead > tr > th:last-child {
+      border-right: $b-borderTable !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: $b-borderTable !important;
+      border-right: $b-borderTable !important;
+    }
+    .ant-table-tbody > tr > td:last-child {
+      border-right: $b-borderTable !important;
+    }
+    .ant-table-tbody > tr > td:first-child {
+      border-left: $b-borderTable !important;
+    }
+    // .table-row-even {
+    //   background: #ecfaf7 0% 0% no-repeat padding-box;
+    //   height: 56px;
+    // }
+    // .table-row-odd {
+    //   background: #cbccce96 0% 0% no-repeat padding-box;
+    //   // background: #f0f2f580 0% 0% no-repeat padding-box;
+    //   height: 56px;
+    // }
+  }
+  .ant-pagination-item-link {
+    background-color: initial;
+  }
+}
+
+// /*hover background odd*/
+.ant-table-tbody > tr:hover > td {
+  background: #eafcf8 !important;
+}

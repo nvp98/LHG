@@ -1,0 +1,26 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.appoint-checkbox {
+  margin-top: 20px;
+  .ant-checkbox-wrapper {
+    width: 300px;
+  }
+}
+.appoint-btn {
+  margin-top: 30px;
+}
+.appoint-content {
+  padding: 20px;
+  p {
+    color: #205072;
+    font-weight: bold;
+  }
+  .appoint-col {
+    box-shadow: 34px 34px 89px #329d9c21;
+    border-radius: 24px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 20px;
+    margin-right: 20px;
+  }
+}

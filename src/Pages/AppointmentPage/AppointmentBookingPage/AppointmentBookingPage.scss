@@ -1,0 +1,54 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+@import 'react-big-calendar/lib/sass/styles';
+
+.appointment_booking {
+  .appointment_booking_tittle {
+    color: $c-textSecondary !important;
+    font-weight: bold;
+  }
+  .scroll {
+    overflow: auto;
+  }
+}
+
+.modal_radio {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+.dayCalendar {
+  .rbc-calendar {
+    height: 600px;
+  }
+  .rbc-row-resource {
+    min-width: 200px;
+  }
+  .rbc-time-view-resources .rbc-day-slot {
+    min-width: 200px;
+  }
+}
+
+.showOne {
+  width: 400px;
+  height: 600px;
+  transition: width 0.5s;
+}
+.showFull {
+  width: 100%;
+  height: 600px;
+  transition: width 0.5s;
+}
+.emptyCalendar {
+  width: 90%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.radioStyle {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}

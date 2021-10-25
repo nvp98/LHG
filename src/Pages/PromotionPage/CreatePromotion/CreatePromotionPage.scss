@@ -1,0 +1,25 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.create-package-title {
+  color: $c-textSecondary !important;
+  font-weight: bold;
+}
+
+.ant-tabs-tab-btn {
+  width: 10vw !important;
+  text-align: center;
+}
+
+.upload-avatar {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: -30px;
+}
+
+.btn-upload-avatar {
+  margin-top: 10px !important;
+  width: 100px !important;
+  height: 25px !important;
+}

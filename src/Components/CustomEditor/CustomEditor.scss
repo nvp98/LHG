@@ -1,0 +1,25 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+/* on mobile browsers, I set a width of 100% */
+.editor {
+  width: 100%;
+}
+
+.tox:not([dir='rtl']) {
+  direction: ltr;
+  text-align: left;
+  outline: 0 !important;
+  border-radius: 5px;
+  color: #61c8ce;
+  border-color: #61c8ce;
+  outline: none;
+  box-shadow: none;
+}
+table.mceLayout,
+textarea.tinyMCE {
+  width: 100% !important;
+  @include mq('phone') {
+    width: 600px !important;
+  }
+}

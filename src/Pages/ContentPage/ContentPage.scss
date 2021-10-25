@@ -1,0 +1,20 @@
+@import '../../Scss/_config';
+
+.content-wrap {
+  .ant-pagination-options {
+    display: none;
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+}
+.content-modal {
+  width: 700px !important;
+  .ant-modal-title {
+    text-align: left;
+    color: #61c8ce;
+  }
+}

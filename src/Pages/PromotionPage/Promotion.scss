@@ -1,0 +1,38 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.package_wrap {
+  .package {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .packageTitle {
+      color: $c-textSecondary !important;
+      font-weight: bold;
+    }
+  }
+
+  .create-package-title {
+    color: $c-textSecondary !important;
+    font-weight: bold;
+  }
+
+  .btn-group {
+    float: right;
+  }
+  .table-row-light {
+    background-color: #ffffff;
+  }
+  .table-row-dark {
+    background-color: #f0f2f5;
+  }
+  .ant-checkbox-input {
+    color: #2cb9aa;
+  }
+  .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2cb9aa;
+    border-radius: 6px;
+  }
+}

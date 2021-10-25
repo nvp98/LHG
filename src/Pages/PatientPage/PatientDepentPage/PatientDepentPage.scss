@@ -1,0 +1,198 @@
+@import 'Scss/_config';
+@import 'Scss/_mixins';
+
+.depent {
+  color: $c-primary !important;
+  padding: 0 2rem;
+  min-height: 700px;
+  .depent_detail {
+    margin-top: 1rem;
+    display: flex;
+
+    .left {
+      flex: 11;
+      .depent_info {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 15px;
+        background-color: #ffffff;
+        p {
+          color: $c-secondary;
+          font-weight: bold;
+        }
+        span {
+          color: $c-secondary;
+        }
+      }
+      .other_info {
+        border-radius: 15px;
+        background-color: #ffffff;
+        .tab_depends {
+          display: 'flex' !important;
+          align-items: 'center' !important;
+          color: $c-secondary !important;
+          div {
+            margin: 0.25rem;
+            span {
+              color: $c-secondary !important;
+              margin: 0 0.25rem;
+            }
+            p {
+              color: $c-secondary;
+              font-weight: bold;
+            }
+          }
+        }
+        .tab_appointment_schedule {
+          background: #f6f9f5 0% 0% no-repeat padding-box;
+          border-radius: 20px;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          color: $c-secondary !important;
+          border: 1px solid $c-primary;
+          padding: 1rem;
+          div {
+            margin: 0.25rem;
+            span {
+              color: $c-secondary;
+              margin: 0 0.25rem;
+            }
+            p {
+              color: $c-secondary;
+              font-weight: bold;
+            }
+          }
+        }
+        .ant-tabs-nav-list {
+          width: 100%;
+          .ant-tabs-tab {
+            width: 100%;
+            .ant-tabs-tab-btn {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      flex: 9;
+      padding: 0 3rem;
+      margin-left: 4rem;
+      box-shadow: 34px 34px 89px #329d9c21;
+      display: flex;
+      justify-content: center;
+      border-radius: 21px;
+      height: 500px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      .patient-right {
+        width: 300px;
+        padding-top: 2rem;
+        .avatar {
+          margin: auto;
+          width: 150px;
+          padding: 10px 0px;
+        }
+        .depent-name {
+          margin: auto;
+          width: 300px;
+          text-align: center;
+          h2 {
+            font: normal normal bold 18px/22px Montserrat;
+          }
+        }
+        .ant-image {
+          width: 300px;
+          margin: auto;
+          text-align: center;
+          .ant-image-img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+    .ant-tabs-nav-list {
+      width: 100%;
+      .ant-tabs-tab {
+        width: 33.3%;
+        .ant-tabs-tab-btn {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+.ant-tabs {
+  box-shadow: 34px 34px 89px #329d9c21;
+
+  .ant-tabs-tab-btn {
+    min-width: 5rem !important;
+    max-width: 15rem !important;
+    width: 10rem !important;
+    text-align: center;
+  }
+}
+
+.ant-tabs-content {
+  padding: 1rem;
+  width: 100%;
+}
+
+.ant-tabs-tabpane .ant-tabs-tabpane-active {
+  // padding: 5rem !important;
+  color: $c-primary !important;
+}
+
+.ant-card {
+  border: 1px solid #2cb9aa;
+  border-radius: 21px;
+  margin: 0.5rem !important;
+}
+
+.ant-card-body {
+  padding: 1rem;
+}
+
+.ant-collapse-item {
+  border: 1px solid #68b2a0;
+  border-radius: 21px;
+  margin: 5px;
+}
+
+.ant-collapse-header {
+  color: $c-primary !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ant-collapse-borderless > .ant-collapse-item:last-child,
+.ant-collapse-borderless > .ant-collapse-item:last-child .ant-collapse-header {
+  border-radius: 21px;
+}
+
+.ant-collapse-borderless > .ant-collapse-item,
+.ant-collapse > .ant-collapse-item {
+  border-bottom: 1px solid #2cb9aa;
+}
+
+.patient .patient_detail .left .patient_info2 .collapse span {
+  color: #38bcb2 !important;
+}
+
+// .ant-collapse-content-box {
+//   overflow: auto;
+//   max-height: 400px;
+//   height: 300px;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+
+.ant-tabs-content-holder {
+  overflow: auto;
+  max-height: 500px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

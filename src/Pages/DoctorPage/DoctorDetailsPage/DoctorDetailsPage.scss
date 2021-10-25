@@ -1,0 +1,106 @@
+@import 'Scss/_config';
+
+.doctor-page {
+  display: flex;
+  flex-direction: row;
+  min-height: 800px;
+  .doctor-right {
+    margin: 0 30px;
+    width: 30%;
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+  }
+
+  .avatar-icon {
+    background: $c-secondary;
+    margin: 15px 0;
+  }
+  .avatar {
+    display: flex;
+    justify-content: center;
+  }
+  .doctor-name {
+    text-align: center;
+  }
+  .doctor-content {
+    width: 25%;
+    p {
+      font-weight: bold;
+      width: 150px;
+      display: inline-block;
+      margin: 5px;
+    }
+    .specialist {
+      width: 200px;
+      padding: 4px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+  }
+  .status {
+    width: 12%;
+  }
+  .button-calen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .booking_doctor {
+    width: 42%;
+    .table-row-light {
+      background-color: #f0f2f5;
+    }
+    .table-row-dark {
+      background-color: #ffffff;
+    }
+    h2 {
+      margin: auto;
+    }
+    .tableWrap {
+      margin-top: 0px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    flex-wrap: wrap;
+    .doctor-content {
+      width: 45%;
+    }
+    .booking_doctor {
+      width: 75%;
+      margin-top: 50px;
+    }
+  }
+  .ant-pagination-options {
+    display: none;
+  }
+}
+.content {
+  border-radius: 15px !important;
+  .ant-modal-content {
+    width: 100%;
+    border-radius: 15px 0px 0px 15px !important;
+  }
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgb(221, 221, 221);
+    border-radius: 15px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(178, 178, 178);
+  }
+}
